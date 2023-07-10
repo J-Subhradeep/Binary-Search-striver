@@ -1,5 +1,6 @@
 li  = [1,2,22,23,45,46,78,90]
-target = 23
+''' lower bound means the smallest number in the array which is >= target'''
+target = 24
 lowerBound = len(li)
 low = 0
 high = len(li) -1
