@@ -1,7 +1,7 @@
-arr = [7,8,9,1,2,3,4,5,6]
+arr = [4,5,6,7,0,1,2]
 low = 0
 high = len(arr)-1
-target = 2
+target = 1
 while(high>=low):
     mid = low + (high-low)//2
     if(arr[mid]==target): print("Element found at ",mid)
