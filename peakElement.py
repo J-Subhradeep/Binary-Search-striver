@@ -1,13 +1,13 @@
-arr =  [ 1,2,3,9,4,3,3,3,3,2,2]
+arr =  [ 1,2,3,4,4,3,3,3,3,2,2]
 def peak(arr):
     low = 1
     high = len(arr)-2
-    if(len(arr)==1): return arr[0]
+    if(len(arr)==1): return 0
     ''' search space is from 1 to n-2 '''
     '''manual check for 0 and n-1 indexes '''
 
-    if(arr[0]>arr[1]): return arr[0]
-    if(arr[len(arr)-1]>arr[len(arr)-2]): return arr[len(arr)-1]
+    if(arr[0]>arr[1]): return 0
+    if(arr[len(arr)-1]>arr[len(arr)-2]): return len(arr)-1
 
 
     '''binary search'''
